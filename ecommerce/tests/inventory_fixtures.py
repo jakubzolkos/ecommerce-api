@@ -1,4 +1,7 @@
 import pytest
+import django
+django.setup()
+
 from ecommerce.inventory.models import (
     Brand,
     Category,

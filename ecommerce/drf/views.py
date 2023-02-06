@@ -4,9 +4,11 @@ from ecommerce.drf.serializer import (
     ProductInventorySerializer,
     ProductSerializer,
 )
+from rest_framework import generics, mixins
 from ecommerce.inventory.models import Category, Product, ProductInventory
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.decorators import api_view
 
 
 class CategoryList(APIView):
